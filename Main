@@ -1,0 +1,20 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        double a = scan.nextDouble();
+        double Area = (3.14)*(a*a);
+        double TotalOutsideValue = 2*(3.14)*a;
+        double MerkezArea = scan.nextDouble();
+        double RealArea = (3.14*(a*a)*MerkezArea)/360;
+        if(MerkezArea <= 360 && MerkezArea > 0){
+            System.out.println(a+"yarıçaplı ve"+MerkezArea+"merkez açılı dairenin alanı ="+RealArea);
+
+        }
+	// write your code here
+    }
+}
